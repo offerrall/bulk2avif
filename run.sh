@@ -3,14 +3,14 @@
 BASE_DIR="$(dirname "$0")"
 VENV="$HOME/.venvs/global"
 
-if [[ -f "$BASE_DIR/main.pyw" ]]; then
-  SCRIPT="$BASE_DIR/main.pyw"
+if [[ -f "$BASE_DIR/bulk2avif.pyw" ]]; then
+  SCRIPT="$BASE_DIR/bulk2avif.pyw"
   BACKGROUND=true
-elif [[ -f "$BASE_DIR/main.py" ]]; then
-  SCRIPT="$BASE_DIR/main.py"
+elif [[ -f "$BASE_DIR/bulk2avif.py" ]]; then
+  SCRIPT="$BASE_DIR/bulk2avif.py"
   BACKGROUND=false
 else
-  echo "❌ No main.py / main.pyw in $BASE_DIR"
+  echo "❌ No bulk2avif.py / bulk2avif.pyw in $BASE_DIR"
   exit 1
 fi
 
