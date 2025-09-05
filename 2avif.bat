@@ -1,2 +1,2 @@
 @echo off
-python "%~dp0main.py" "%~dp0"
+python "%~dp0bulk2avif.py" "%~dp0"
